@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Beat Me If You Can</string>
+    <string name="Goal">Cieľ</string>
+    <string name="GoalB">Získať čo najviac bodov.</string>
+    <string name="GoalTW">Udržať palec protihráča na určitu dobu.</string>
+    <string name="Rules">Pravidlá hry</string>
+    <string name="Score">Skóre</string>
+    <string name="ScoreTW">Za každú hru získava víťaz jeden bod.</string>
+    <string name="Win">Víťaz</string>
+    <string name="game1">Basketbal</string>
+    <string name="game2">Pretláčanie palcom</string>
+    <string name="hint">Meno hráča</string>
+    <string name="reset">Reset</string>
+    <string name="results">A víťazom sa stáva...</string>
+    <string name="title">Poraz ma ak to dokážeš</string>
+    <string name="nazov">Poraz ma</string>
+    <string name="add3">+3 body</string>
+    <string name="add2">+2 body</string>
+    <string name="add1">+1 bod</string>
+    <string name="minus1">-1 bod</string>
+    <string name="WinB">Hráč, ktorý získal najvyšší počet bodov, sa stáva víťazom.</string>
+    <string name="WinTW" translatable="false">Aby hráč vyhral, musí udrťaž prst protihráča po dobu kým povie: raz, dva, tri, štyri, vyhrávam vojnu1.</string>
+    <string name="ScoreB" translatable="false">Body môžu byť získané hodením koša (za dva alebo tri body) alebo trestnými hodmi (jeden bod). Ak je hráč bránku z hry priamo z trojbodové čiary, hráč skóre dvoma bodmi. V prípade, že hráč robí bránku spoza trojbodového vedenia, hráč skóre troch bodov.</string>
+</resources>

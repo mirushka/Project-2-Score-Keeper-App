@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context="com.example.android.beatmeifyoucan.basketballRules">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/MyTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="@dimen/smallPadding">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:background="@color/white"
+                android:padding="@dimen/paddingTitle"
+                android:scaleType="fitXY"
+                android:src="@drawable/basketball" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="@dimen/layout_margin"
+                android:layout_marginStart="@dimen/layout_margin"
+                android:gravity="center"
+                android:text="@string/game1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/title"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/rules" />
+
+            <TextView
+                android:id="@+id/titleRulesB"
+                style="@style/RulesTextViewStyle"
+                android:background="#70BDBDBD"
+                android:padding="@dimen/title"
+                android:text="@string/Rules"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                style="@style/RulesTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/titleRulesB"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/RulesTextViewStyle"
+                    android:text="@string/Goal"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/RulesTextViewStyle"
+                    android:text="@string/GoalB"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    style="@style/RulesTextViewStyle"
+                    android:text="@string/Win"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/RulesTextViewStyle"
+                    android:text="@string/WinB"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    style="@style/RulesTextViewStyle"
+                    android:text="@string/Score"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/RulesTextViewStyle"
+                    android:text="@string/ScoreB"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>

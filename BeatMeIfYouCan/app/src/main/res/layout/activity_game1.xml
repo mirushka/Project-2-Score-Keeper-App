@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.example.android.beatmeifyoucan.game1Activity">
+
+    <LinearLayout
+        style="@style/BasicLinearLayoutStyle"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/MyTextViewStyle"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:background="@color/white"
+                android:onClick="displayRules"
+                android:padding="@dimen/paddingTitle"
+                android:scaleType="fitXY"
+                android:src="@drawable/basketball" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/layout_margin"
+                android:layout_marginStart="@dimen/layout_margin"
+                android:gravity="center"
+                android:text="@string/game1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/title"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/orange"
+            android:orientation="horizontal"
+            android:padding="@dimen/smallPadding">
+
+            <EditText
+                android:id="@+id/namePlayer1"
+                style="@style/EditTextViewStyle"
+                android:layout_marginEnd="@dimen/layout_margin"
+                android:layout_weight="2"
+                android:background="@color/darkOrange"
+                android:hint="@string/hint"
+                android:maxLines="2"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/text_small" />
+
+            <EditText
+                android:id="@+id/namePlayer2"
+                style="@style/EditTextViewStyle"
+                android:layout_weight="2"
+                android:background="@color/darkOrange"
+                android:hint="@string/hint"
+                android:maxLines="2"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/text_small" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/court2" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/buttonMargin"
+                android:layout_marginTop="@dimen/buttonMargin"
+                android:gravity="center"
+                android:text="Total Score"
+                android:textColor="@color/green"
+                android:textSize="@dimen/text_big" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/quantity_text_view1"
+                    style="@style/EditTextViewStyle"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/text_big" />
+
+                <TextView
+                    android:id="@+id/quantity_text_view2"
+                    style="@style/EditTextViewStyle"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/text_big" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/SmallButtonViewStyle"
+                android:layout_weight="1"
+                android:onClick="increment1"
+                android:text="@string/add1" />
+
+            <Button
+                style="@style/SmallButtonViewStyle"
+                android:layout_weight="1"
+                android:onClick="increment4"
+                android:text="@string/add1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/SmallButtonViewStyle"
+                android:layout_weight="1"
+                android:onClick="increment2"
+                android:text="@string/add2" />
+
+            <Button
+                style="@style/SmallButtonViewStyle"
+                android:layout_weight="1"
+                android:onClick="increment5"
+                android:text="@string/add2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/SmallButtonViewStyle"
+                android:layout_weight="1"
+                android:onClick="increment3"
+                android:text="@string/add3" />
+
+            <Button
+                style="@style/SmallButtonViewStyle"
+                android:layout_weight="1"
+                android:onClick="increment6"
+                android:text="@string/add3" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/SmallButtonViewStyle"
+                android:layout_weight="1"
+                android:onClick="decrement1"
+                android:text="@string/minus1" />
+
+            <Button
+                style="@style/SmallButtonViewStyle"
+                android:layout_weight="1"
+                android:onClick="decrement2"
+                android:text="@string/minus1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/BasicLinearLayoutStyle"
+            android:orientation="vertical">
+
+            <Button
+                style="@style/LargaButtonViewStyle"
+                android:onClick="submitResults1"
+                android:text="@string/results" />
+
+            <TextView
+                android:id="@+id/score_text_view"
+                style="@style/SmallTextViewStyle"
+                android:text=" "
+                android:visibility="gone" />
+
+            <Button
+                style="@style/LargaButtonViewStyle"
+                android:background="@color/black"
+                android:onClick="resetScore"
+                android:text="@string/reset" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

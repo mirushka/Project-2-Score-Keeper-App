@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    tools:context="com.example.android.beatmeifyoucan.MainActivity">
+
+    <LinearLayout
+        style="@style/BasicLinearLayoutStyle"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <LinearLayout
+            style="@style/MyTextViewStyle"
+            android:layout_weight="1"
+            android:background="@color/orange"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:background="@color/white"
+                android:onClick="playMusic"
+                android:padding="@dimen/smallPadding"
+                android:scaleType="fitXY"
+                android:src="@drawable/basketball" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/layout_margin"
+                android:layout_marginStart="@dimen/layout_margin"
+                android:gravity="center"
+                android:onClick="openGame1"
+                android:text="@string/game1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/title"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:src="@drawable/fight" />
+
+            <TextView
+                style="@style/SmallTextViewStyle"
+                android:layout_centerVertical="true"
+                android:background="#80000000"
+                android:maxLines="2"
+                android:text="@string/title"
+                android:textColor="@color/white"
+                android:textSize="@dimen/title" />
+        </RelativeLayout>
+
+        <LinearLayout
+            style="@style/MyTextViewStyle"
+            android:layout_weight="1"
+            android:background="@color/orange"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="@dimen/smallPadding"
+                android:adjustViewBounds="true"
+                android:background="@color/white"
+                android:onClick="playMusic"
+                android:scaleType="fitXY"
+                android:src="@drawable/game2" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/layout_margin"
+                android:layout_marginStart="@dimen/layout_margin"
+                android:gravity="center"
+                android:maxLines="2"
+                android:onClick="openGame2"
+                android:text="@string/game2"
+                android:textColor="@color/black"
+                android:textSize="@dimen/title"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

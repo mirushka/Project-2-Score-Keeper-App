@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.beatmeifyoucan">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity"
+            android:label="MainScreen">
+            <meta-data
+                android:name=".MainActivity"
+                android:value="com.example.android.beatmeifyouca"/>
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".game1Activity"
+            android:label="Basketball"
+            android:parentActivityName=".MainActivity">
+        <meta-data
+            android:name=".MainActivity"
+            android:value="com.example.android.beatmeifyouca"/>
+        </activity>
+
+        <activity android:name=".game2Activity"
+            android:label="Thumb Wrestling"
+            android:parentActivityName=".MainActivity">
+        <meta-data
+            android:name=".MainActivity"
+            android:value="com.example.android.beatmeifyouca"/>
+        </activity>
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".basketballRules"
+            android:label="Basketbal Rules"
+            android:parentActivityName=".game1Activity"/>
+        <activity android:name=".thumbWrestlingRules"
+            android:label="Thumb Wrestling Rules"
+            android:parentActivityName=".game2Activity"></activity>
+    </application>
+
+</manifest>

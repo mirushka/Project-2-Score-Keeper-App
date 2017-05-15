@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Beat Me If You Can</string>
+    <string name="title">Beat Me If You Can</string>
+    <string name="game1">Basketball</string>
+    <string name="game2">Thumb Wreslting</string>
+    <string name="nazov">Beat Me</string>
+    <string name="reset">Reset</string>
+
+    /**
+    * Buttons
+    */
+    <string name="add1">+1 point</string>
+    <string name="add2">+2 points</string>
+    <string name="add3">+3 points</string>
+    <string name="minus1">-1 point</string>
+
+    <string name="hint">Enter player\'s name</string>
+
+
+    /**
+    * This method is called when decrement button is clicked.
+    */
+    <string name="results">And the winner is...</string>
+
+
+    /**
+    * Rules activity TextViews
+    */
+    <string name="Rules">Game rules</string>
+    <string name="Goal">Goal</string>
+    <string name="Win">Winner</string>
+    <string name="Score">Score</string>
+
+    <string name="GoalTW">"To pin opponent's thumb down for certain period of time."</string>
+    <string name="WinTW">"To win a contest 1 player must pin opponent's thumb down for as long as it takes to say: one, two, three, four, I win thumb-o-war!"</string>
+    <string name="ScoreTW">For every match winner gains 1 point.</string>
+
+    <string name="GoalB">"To reach as many points as possible."</string>
+    <string name="WinB">"The player that has recorded the most points at the end of a game is declared that game's winner."</string>
+    <string name="ScoreB" translatable="false">Points can be accumulated by making field goals (two or three points) or free throws (one point). If a player makes a field goal from within the three-point line, the player scores two points. If the player makes a field goal from beyond the three-point line, the player scores three points. </string>
+</resources>
